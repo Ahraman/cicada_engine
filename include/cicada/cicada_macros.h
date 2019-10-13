@@ -1,15 +1,15 @@
 #ifndef CICADA_CICADA_MACROS_HEADER_GUARDS
 # define CICADA_CICADA_MACROS_HEADER_GUARDS (1)
 
-# ifndef CICADA_PRAGMA_ONCE_ENABLED
+# ifndef CICADA_PRAGMA_ONCE
 #  if defined(_MSC_VER) && (_MSC_VER >= 1020)
-#   define CICADA_PRAGMA_ONCE_ENABLED (1)
+#   define CICADA_PRAGMA_ONCE (1)
 #  else
-#   define CICADA_PRAGMA_ONCE_ENABLED (0)
+#   define CICADA_PRAGMA_ONCE (0)
 #  endif
 # endif
 
-# ifdef CICADA_PRAGMA_ONCE_ENABLED
+# ifdef CICADA_PRAGMA_ONCE
 #  pragma once
 # endif
 
