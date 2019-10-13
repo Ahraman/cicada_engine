@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cicada", "projects\cicada\cicada.vcxproj", "{61AE5863-BF3E-450A-91B7-862E90122C91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		bin|x64 = bin|x64
+		bin|x86 = bin|x86
+		debug|x64 = debug|x64
+		debug|x86 = debug|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61AE5863-BF3E-450A-91B7-862E90122C91}.bin|x64.ActiveCfg = bin|x64
+		{61AE5863-BF3E-450A-91B7-862E90122C91}.bin|x64.Build.0 = bin|x64
+		{61AE5863-BF3E-450A-91B7-862E90122C91}.bin|x86.ActiveCfg = bin|Win32
+		{61AE5863-BF3E-450A-91B7-862E90122C91}.bin|x86.Build.0 = bin|Win32
+		{61AE5863-BF3E-450A-91B7-862E90122C91}.debug|x64.ActiveCfg = debug|x64
+		{61AE5863-BF3E-450A-91B7-862E90122C91}.debug|x64.Build.0 = debug|x64
+		{61AE5863-BF3E-450A-91B7-862E90122C91}.debug|x86.ActiveCfg = debug|Win32
+		{61AE5863-BF3E-450A-91B7-862E90122C91}.debug|x86.Build.0 = debug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5B59A80-F3A4-42A5-9C44-E96F4D18E423}
+	EndGlobalSection
+EndGlobal
