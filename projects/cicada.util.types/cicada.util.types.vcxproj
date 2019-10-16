@@ -18,6 +18,40 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\cicada\util\types\add_lvalue_reference.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\add_rvalue_reference.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\boolean.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\declval.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\disjunction.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\exclusive_disjunction.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\integral_constant.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\is_arithmetic.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\is_array.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\is_bool.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\is_bounded_array.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\is_char.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\is_class.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\is_enum.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\is_floating_point.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\is_integer.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\is_integral.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\is_member_pointer.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\is_null_pointer.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\is_object.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\is_pointer.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\is_same.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\is_scalar.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\conjunction.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\is_unbounded_array.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\is_union.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\movable.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\negation.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\remove_const.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\remove_cv.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\remove_volatile.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\types\type_identity.hpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{982A34BB-61B9-453C-9D71-2420C6AF6270}</ProjectGuid>
@@ -97,6 +131,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -110,6 +145,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -121,6 +157,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -134,6 +171,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -141,9 +179,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\include\cicada\util\types\void_t.hpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

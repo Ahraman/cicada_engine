@@ -146,6 +146,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\include\cicada\util\iterators\array_iterator.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\iterators\iterator_traits.hpp" />
+    <ClInclude Include="..\..\include\cicada\util\iterators\reverse_iterator.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
