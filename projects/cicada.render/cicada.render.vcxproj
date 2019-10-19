@@ -18,49 +18,10 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\include\cicada\util\types\add_lvalue_reference.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\add_rvalue_reference.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\boolean.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\declval.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\disjunction.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\exclusive_disjunction.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\forward.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\integral_constant.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\is_arithmetic.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\is_array.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\is_bool.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\is_bounded_array.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\is_char.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\is_class.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\is_enum.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\is_floating_point.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\is_integer.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\is_integral.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\is_member_pointer.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\is_null_pointer.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\is_object.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\is_pointer.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\is_same.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\is_scalar.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\conjunction.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\is_unbounded_array.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\is_union.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\movable.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\negation.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\remove_const.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\remove_cv.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\remove_cvref.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\remove_lvalue_reference.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\remove_reference.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\remove_rvalue_reference.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\remove_volatile.hpp" />
-    <ClInclude Include="..\..\include\cicada\util\types\type_identity.hpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{982A34BB-61B9-453C-9D71-2420C6AF6270}</ProjectGuid>
-    <RootNamespace>cicadautiltypes</RootNamespace>
+    <ProjectGuid>{F8658B0B-2D2D-4CC9-99E8-1CE69CACA8AF}</ProjectGuid>
+    <RootNamespace>cicadarender</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -109,24 +70,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)\win_$(PlatformShortName)\</OutDir>
-    <IntDir>$(SolutionDir)int\$(Configuration)\win_$(PlatformShortName)\$(ProjectName)\</IntDir>
-    <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <OutDir>%(SolutionDir)$(Configuration)\win_$(PlatformShortName)\</OutDir>
+    <IntDir>%(SolutionDir)int\$(Configuration)\win_$(PlatformShortName)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='bin|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)\win_$(PlatformShortName)\</OutDir>
-    <IntDir>$(SolutionDir)int\$(Configuration)\win_$(PlatformShortName)\$(ProjectName)\</IntDir>
-    <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <OutDir>%(SolutionDir)$(Configuration)\win_$(PlatformShortName)\</OutDir>
+    <IntDir>%(SolutionDir)int\$(Configuration)\win_$(PlatformShortName)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
-    <OutDir>$(SolutionDir)$(Configuration)\win_$(PlatformShortName)\</OutDir>
-    <IntDir>$(SolutionDir)int\$(Configuration)\win_$(PlatformShortName)\$(ProjectName)\</IntDir>
-    <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <OutDir>%(SolutionDir)$(Configuration)\win_$(PlatformShortName)\</OutDir>
+    <IntDir>%(SolutionDir)int\$(Configuration)\win_$(PlatformShortName)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='bin|x64'">
-    <OutDir>$(SolutionDir)$(Configuration)\win_$(PlatformShortName)\</OutDir>
-    <IntDir>$(SolutionDir)int\$(Configuration)\win_$(PlatformShortName)\$(ProjectName)\</IntDir>
-    <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <OutDir>%(SolutionDir)$(Configuration)\win_$(PlatformShortName)\</OutDir>
+    <IntDir>%(SolutionDir)int\$(Configuration)\win_$(PlatformShortName)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='bin|x64'">
     <ClCompile>
@@ -136,7 +93,6 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -150,7 +106,6 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -162,7 +117,6 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -176,7 +130,6 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -184,6 +137,8 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

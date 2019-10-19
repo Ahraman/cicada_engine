@@ -14,6 +14,9 @@
     <ClInclude Include="..\..\include\cicada\util\logging\logger.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\cicada\util\logging\macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\cicada\util\logging\logger.cpp">

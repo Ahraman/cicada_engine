@@ -1,5 +1,5 @@
-#ifndef CICADA_CICADA_MACROS_HEADER_GUARDS
-# define CICADA_CICADA_MACROS_HEADER_GUARDS (1)
+#ifndef CICADA_MACROS_HEADER_GUARDS
+# define CICADA_MACROS_HEADER_GUARDS (1)
 
 # ifndef CICADA_PRAGMA_ONCE
 #  if defined(_MSC_VER) && (_MSC_VER >= 1020)
@@ -133,17 +133,7 @@
 #   endif
 #  endif
 
-#  ifndef CICADA_API
-#   ifdef CICADA_COMPILER_MSVC
-#    ifdef CICADA_EXPORT
-#      define CICADA_API __declspec(dllexport)
-#    else
-#      define CICADA_API __declspec(dllimport)
-#    endif
-#   else
-#    define CICADA_API
-#   endif
-#  endif
+// TODO correct usage of CICADA_API
 
 #  ifndef CICADA_NOINLINE
 #   ifdef CICADA_COMPILER_MSVC

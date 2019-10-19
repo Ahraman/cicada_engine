@@ -11,7 +11,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\include\cicada\cicada_macros.h">
+    <ClInclude Include="..\..\include\cicada\macros.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

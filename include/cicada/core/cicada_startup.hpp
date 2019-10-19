@@ -1,13 +1,13 @@
 #ifndef CICADA_CORE_CICADA_STARTUP_HEADER_GUARD
 # define CICADA_CORE_CICADA_STARTUP_HEADER_GUARD (1)
 
-# include "cicada/cicada_macros.h"
+# include "cicada/core/macros.h"
 
 # ifdef CICADA_PRAGMA_ONCE
 #  pragma once
 # endif
 
-# include "cicada_engine.h"
+# include "cicada_application.h"
 
 namespace ccd {
 	// TODO use concepts

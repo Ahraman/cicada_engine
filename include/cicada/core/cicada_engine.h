@@ -1,15 +1,15 @@
 #ifndef CICADA_CORE_CICADA_ENGINE_HEADER_GUARD
 # define CICADA_CORE_CICADA_ENGINE_HEADER_GUARD (1)
 
-# include "cicada/cicada_macros.h"
+# include "cicada/core/macros.h"
 
 # ifdef CICADA_PRAGMA_ONCE
 #  pragma once
 # endif
 
-#include "cicada_application.h"
-
 namespace ccd {
+	class cicada_application;
+
 	namespace detail {
 		struct cicada_engine_lock
 		{
@@ -22,7 +22,9 @@ namespace ccd {
 		: public detail::cicada_engine_lock
 	{
 	public:
-		CICADA_API cicada_engine(cicada_application&& p_application, lock);
+		CICADA_CORE_API cicada_engine(cicada_application&& p_application, lock);
+
+		CICADA_CORE_API void operator()();
 	private:
 		cicada_application& m_application;
 	};

@@ -1,7 +1,7 @@
 #ifndef CICADA_UTIL_TYPES_ADD_RVALUE_REFERENCE_HEADER_GUARD
 # define CICADA_UTIL_TYPES_ADD_RVALUE_REFERENCE_HEADER_GUARD (1)
 
-# include "cicada/cicada_macros.h"
+# include "cicada/macros.h"
 
 # ifdef CICADA_PRAGMA_ONCE
 #  pragma once

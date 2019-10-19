@@ -9,6 +9,9 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="Header Files\subsystem">
+      <UniqueIdentifier>{618f648e-12a8-44e4-8cd1-d55695de549f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\cicada\core\cicada_startup.hpp">
@@ -19,6 +22,12 @@
     </ClInclude>
     <ClInclude Include="..\..\include\cicada\core\cicada_application.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\cicada\core\macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\cicada\core\subsystem\subsystem.h">
+      <Filter>Header Files\subsystem</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
