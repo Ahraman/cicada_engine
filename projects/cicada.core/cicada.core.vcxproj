@@ -154,7 +154,6 @@
     <ClInclude Include="..\..\include\cicada\core\macros.h" />
     <ClInclude Include="..\..\include\cicada\core\cicada_engine.h" />
     <ClInclude Include="..\..\include\cicada\core\cicada_startup.hpp" />
-    <ClInclude Include="..\..\include\cicada\core\subsystem\subsystem.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\cicada\core\cicada_application.cpp" />

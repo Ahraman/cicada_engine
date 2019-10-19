@@ -11,14 +11,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\include\cicada\render\macros.h">
+    <ClInclude Include="..\..\include\cicada\render\d3d12\macros.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\cicada\render\render_device.h">
+    <ClInclude Include="..\..\include\cicada\render\d3d12\d3d12_backend.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\cicada\render\render_backend.h">
+    <ClInclude Include="..\..\include\cicada\render\d3d12\d3d12_device.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\cicada\render\d3d12\d3d12_device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\cicada\render\d3d12\d3d12_backend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

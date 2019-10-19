@@ -22,6 +22,7 @@
 #  endif
 
 # else
+
 #  ifndef CICADA_CORE_API
 #   define CICADA_CORE_API
 #  endif

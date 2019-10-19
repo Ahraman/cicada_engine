@@ -15,27 +15,7 @@ void ccd::cicada_application::stop() noexcept
 	this->m_running = false;
 }
 
-void ccd::cicada_application::startup(cicada_engine& p_engine)
+void ccd::cicada_application::start(cicada_engine& p_engine)
 {
 	this->m_running = true;
-	
-	this->pre_init(p_engine);
-
-	this->init(p_engine);
-
-	this->post_init(p_engine);
-}
-
-void ccd::cicada_application::loop(cicada_engine& p_engine)
-{
-	this->update(p_engine);
-}
-
-void ccd::cicada_application::finish(cicada_engine& p_engine)
-{
-	this->pre_cleanup(p_engine);
-
-	this->cleanup(p_engine);
-
-	this->post_cleanup(p_engine);
 }

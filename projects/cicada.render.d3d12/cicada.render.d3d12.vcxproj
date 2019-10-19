@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{F8658B0B-2D2D-4CC9-99E8-1CE69CACA8AF}</ProjectGuid>
-    <RootNamespace>cicadarender</RootNamespace>
+    <ProjectGuid>{B43B26E7-9FA1-4635-883F-4ED234B2AFE8}</ProjectGuid>
+    <RootNamespace>cicadarenderd3d12</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -70,24 +70,24 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
-    <OutDir>%(SolutionDir)$(Configuration)\win_$(PlatformShortName)\</OutDir>
-    <IntDir>%(SolutionDir)int\$(Configuration)\win_$(PlatformShortName)\$(ProjectName)\</IntDir>
     <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Configuration)\win_$(PlatformShortName)\</OutDir>
+    <IntDir>$(SolutionDir)int\$(Configuration)\win_$(PlatformShortName)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='bin|Win32'">
-    <OutDir>%(SolutionDir)$(Configuration)\win_$(PlatformShortName)\</OutDir>
-    <IntDir>%(SolutionDir)int\$(Configuration)\win_$(PlatformShortName)\$(ProjectName)\</IntDir>
     <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Configuration)\win_$(PlatformShortName)\</OutDir>
+    <IntDir>$(SolutionDir)int\$(Configuration)\win_$(PlatformShortName)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
-    <OutDir>%(SolutionDir)$(Configuration)\win_$(PlatformShortName)\</OutDir>
-    <IntDir>%(SolutionDir)int\$(Configuration)\win_$(PlatformShortName)\$(ProjectName)\</IntDir>
     <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Configuration)\win_$(PlatformShortName)\</OutDir>
+    <IntDir>$(SolutionDir)int\$(Configuration)\win_$(PlatformShortName)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='bin|x64'">
-    <OutDir>%(SolutionDir)$(Configuration)\win_$(PlatformShortName)\</OutDir>
-    <IntDir>%(SolutionDir)int\$(Configuration)\win_$(PlatformShortName)\$(ProjectName)\</IntDir>
     <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Configuration)\win_$(PlatformShortName)\</OutDir>
+    <IntDir>$(SolutionDir)int\$(Configuration)\win_$(PlatformShortName)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='bin|x64'">
     <ClCompile>
@@ -97,6 +97,8 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <PreprocessorDefinitions>CICADA_RENDER_D3D12_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -110,6 +112,8 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <PreprocessorDefinitions>CICADA_RENDER_D3D12_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -121,6 +125,8 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <PreprocessorDefinitions>CICADA_RENDER_D3D12_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -134,6 +140,8 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <PreprocessorDefinitions>CICADA_RENDER_D3D12_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -142,9 +150,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\include\cicada\render\macros.h" />
-    <ClInclude Include="..\..\include\cicada\render\render_backend.h" />
-    <ClInclude Include="..\..\include\cicada\render\render_device.h" />
+    <ClInclude Include="..\..\include\cicada\render\d3d12\macros.h" />
+    <ClInclude Include="..\..\include\cicada\render\d3d12\d3d12_backend.h" />
+    <ClInclude Include="..\..\include\cicada\render\d3d12\d3d12_device.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\cicada\render\d3d12\d3d12_backend.cpp" />
+    <ClCompile Include="..\..\src\cicada\render\d3d12\d3d12_device.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

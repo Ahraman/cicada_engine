@@ -18,21 +18,15 @@ namespace ccd {
 		CICADA_NODISCARD CICADA_CORE_API bool running() const noexcept;
 		CICADA_NODISCARD CICADA_CORE_API void stop() noexcept;
 
-		void startup(cicada_engine& p_engine);
+		virtual void start(cicada_engine& p_engine);
 
 		virtual void pre_init(cicada_engine& p_engine) = 0;
 		virtual void init(cicada_engine& p_engine) = 0;
 		virtual void post_init(cicada_engine& p_engine) = 0;
-
-		void loop(cicada_engine& p_engine);
 		
 		virtual void update(cicada_engine& p_engine) = 0;
 
-		void finish(cicada_engine& p_engine);
-
-		virtual void pre_cleanup(cicada_engine& p_engine) = 0;
 		virtual void cleanup(cicada_engine& p_engine) = 0;
-		virtual void post_cleanup(cicada_engine& p_engine) = 0;
 	private:
 		bool m_running;
 	};

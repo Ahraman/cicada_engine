@@ -43,6 +43,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cicada.util.types", "projec
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cicada.render", "projects\cicada.render\cicada.render.vcxproj", "{F8658B0B-2D2D-4CC9-99E8-1CE69CACA8AF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cicada.render.d3d12", "projects\cicada.render.d3d12\cicada.render.d3d12.vcxproj", "{B43B26E7-9FA1-4635-883F-4ED234B2AFE8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cicada.script.lua", "projects\cicada.script.lua\cicada.script.lua.vcxproj", "{1EC3F636-81D5-451E-96D1-A38C7BE0655C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		bin|x64 = bin|x64
@@ -115,6 +119,22 @@ Global
 		{F8658B0B-2D2D-4CC9-99E8-1CE69CACA8AF}.debug|x64.Build.0 = debug|x64
 		{F8658B0B-2D2D-4CC9-99E8-1CE69CACA8AF}.debug|x86.ActiveCfg = debug|Win32
 		{F8658B0B-2D2D-4CC9-99E8-1CE69CACA8AF}.debug|x86.Build.0 = debug|Win32
+		{B43B26E7-9FA1-4635-883F-4ED234B2AFE8}.bin|x64.ActiveCfg = bin|x64
+		{B43B26E7-9FA1-4635-883F-4ED234B2AFE8}.bin|x64.Build.0 = bin|x64
+		{B43B26E7-9FA1-4635-883F-4ED234B2AFE8}.bin|x86.ActiveCfg = bin|Win32
+		{B43B26E7-9FA1-4635-883F-4ED234B2AFE8}.bin|x86.Build.0 = bin|Win32
+		{B43B26E7-9FA1-4635-883F-4ED234B2AFE8}.debug|x64.ActiveCfg = debug|x64
+		{B43B26E7-9FA1-4635-883F-4ED234B2AFE8}.debug|x64.Build.0 = debug|x64
+		{B43B26E7-9FA1-4635-883F-4ED234B2AFE8}.debug|x86.ActiveCfg = debug|Win32
+		{B43B26E7-9FA1-4635-883F-4ED234B2AFE8}.debug|x86.Build.0 = debug|Win32
+		{1EC3F636-81D5-451E-96D1-A38C7BE0655C}.bin|x64.ActiveCfg = bin|x64
+		{1EC3F636-81D5-451E-96D1-A38C7BE0655C}.bin|x64.Build.0 = bin|x64
+		{1EC3F636-81D5-451E-96D1-A38C7BE0655C}.bin|x86.ActiveCfg = bin|Win32
+		{1EC3F636-81D5-451E-96D1-A38C7BE0655C}.bin|x86.Build.0 = bin|Win32
+		{1EC3F636-81D5-451E-96D1-A38C7BE0655C}.debug|x64.ActiveCfg = debug|x64
+		{1EC3F636-81D5-451E-96D1-A38C7BE0655C}.debug|x64.Build.0 = debug|x64
+		{1EC3F636-81D5-451E-96D1-A38C7BE0655C}.debug|x86.ActiveCfg = debug|Win32
+		{1EC3F636-81D5-451E-96D1-A38C7BE0655C}.debug|x86.Build.0 = debug|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
